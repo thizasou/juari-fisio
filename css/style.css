@@ -1,21 +1,51 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: #EDF9FF;
 }
 
-img{
+img {
     max-width: 100%;
+}
+
+header {
+    background-color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 30px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    max-width: 900px;
+    margin: auto;
+    /* background-color: blue; */
+}
+
+.menu li {
+    margin: 0 auto;
+}
+
+.menu li a {
+    /* background-color: red; */
+    color: #2B56B4;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #33AED7;
 }
 
 /* HOME CARE */
 
-.home-care{
+.home-care {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -23,16 +53,16 @@ img{
     margin: auto;
 }
 
-.home-care > article > h2{
+.home-care>article>h2 {
     font-size: 2.2rem;
     color: rgb(43, 86, 180);
 }
 
-.home-care > article > h3{
+.home-care>article>h3 {
     color: rgb(43, 86, 180);
 }
 
-.home-care > article > p{
+.home-care>article>p {
     font-size: 1.5rem;
     margin: 20px 0px;
     line-height: 1.3;
@@ -41,45 +71,45 @@ img{
 
 /* SERVIÇOS */
 
-.servicos{
+.servicos {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
     margin-top: 100px;
 }
 
-.servicos > article{
+.servicos>article {
     padding: 20px 10px 150px 10px;
 }
 
-.servico1{
+.servico1 {
     background-color: #19647E;
 }
 
-.servico2{
+.servico2 {
     background-color: #33AED7;
 }
 
-.servico3{
+.servico3 {
     background-color: #77C9E4;
 }
 
-.servico4{
+.servico4 {
     background-color: #ABDAE1;
 }
 
-.servicos h2{
+.servicos h2 {
     text-align: center;
     margin: 20px 0px;
 }
 
-.servicos > article > span{
+.servicos>article>span {
     font-size: 2.2rem;
     display: block;
     text-align: center;
 }
 
-.servicos p{
+.servicos p {
     line-height: 1.3;
     padding: 0px 20px;
     text-align: center;
@@ -87,7 +117,7 @@ img{
 
 /* ATENDIMENTO */
 
-.atendimento{
+.atendimento {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -95,59 +125,63 @@ img{
     margin: auto;
 }
 
-.atendimento > article{
-   margin-left: 100px;
+.atendimento>article {
+    margin-left: 100px;
 }
 
-.atendimento > article > h2{
+.atendimento>article>h2 {
     font-size: 2.2rem;
     color: rgb(43, 86, 180);
 }
 
-.atendimento > article > h3{
+.atendimento>article>h3 {
     color: rgb(43, 86, 180);
 }
 
-.atendimento > article > p{
+.atendimento>article>p {
     font-size: 1.5rem;
     margin: 20px 0px;
     line-height: 1.3;
     color: rgb(68, 67, 67);
-    
+
 }
 
-@media(max-width: 1050px){
+@media(max-width: 1050px) {
     /* home care */
 
-    .home-care{
+    .home-care {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
         padding: 0px 20px;
     }
 
-    .home-care{
+    .home-care {
         text-align: center;
     }
 
-    .home-care > article > p{
-       text-align: center;
+    .home-care>article>p {
+        text-align: center;
     }
 
-    article > h2, article > h3{
+    article>h2,
+    article>h3 {
         text-align: center;
     }
 
     /* SERVIÇOS */
-    
-    .servico1, .servico2, .servico3, .servico4{
+
+    .servico1,
+    .servico2,
+    .servico3,
+    .servico4 {
         max-width: 300px;
         margin: 0px;
     }
 
     /* ATENDIMENTO */
 
-    .atendimento{
+    .atendimento {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
@@ -155,22 +189,22 @@ img{
         padding: 0px 20px;
     }
 
-    .atendimento > article{
+    .atendimento>article {
         margin-left: 0px;
-     }
+    }
 
-     .atendimento > article > h2{
+    .atendimento>article>h2 {
         color: rgb(43, 86, 180);
         margin-top: 50px;
     }
-    
+
 }
 
-@media(max-width: 616px){
-    .servicos{
+@media(max-width: 616px) {
+    .servicos {
         flex-wrap: wrap;
         max-width: 300px;
         margin: auto;
-     }
- 
+    }
+
 }

@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #EDF9FF;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* HOME CARE */
+
+.home-care{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.home-care > article > h2{
+    font-size: 2.2rem;
+    color: rgb(43, 86, 180);
+}
+
+.home-care > article > h3{
+    color: rgb(43, 86, 180);
+}
+
+.home-care > article > p{
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    line-height: 1.3;
+    color: rgb(68, 67, 67);
+}
+
+/* SERVIÇOS */
+
+.servicos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.servicos > article{
+    padding: 20px 10px 150px 10px;
+}
+
+.servico1{
+    background-color: #19647E;
+}
+
+.servico2{
+    background-color: #33AED7;
+}
+
+.servico3{
+    background-color: #77C9E4;
+}
+
+.servico4{
+    background-color: #ABDAE1;
+}
+
+.servicos h2{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.servicos > article > span{
+    font-size: 2.2rem;
+    display: block;
+    text-align: center;
+}
+
+.servicos p{
+    line-height: 1.3;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+/* ATENDIMENTO */
+
+.atendimento{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.atendimento > article{
+   margin-left: 100px;
+}
+
+.atendimento > article > h2{
+    font-size: 2.2rem;
+    color: rgb(43, 86, 180);
+}
+
+.atendimento > article > h3{
+    color: rgb(43, 86, 180);
+}
+
+.atendimento > article > p{
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    line-height: 1.3;
+    color: rgb(68, 67, 67);
+    
+}
+
+@media(max-width: 1050px){
+    /* home care */
+
+    .home-care{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .home-care{
+        text-align: center;
+    }
+
+    .home-care > article > p{
+       text-align: center;
+    }
+
+    article > h2, article > h3{
+        text-align: center;
+    }
+
+    /* SERVIÇOS */
+    
+    .servico1, .servico2, .servico3, .servico4{
+        max-width: 300px;
+        margin: 0px;
+    }
+
+    /* ATENDIMENTO */
+
+    .atendimento{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .atendimento > article{
+        margin-left: 0px;
+     }
+
+     .atendimento > article > h2{
+        color: rgb(43, 86, 180);
+        margin-top: 50px;
+    }
+    
+}
+
+@media(max-width: 616px){
+    .servicos{
+        flex-wrap: wrap;
+        max-width: 300px;
+        margin: auto;
+     }
+ 
+}

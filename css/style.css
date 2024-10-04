@@ -181,7 +181,6 @@ header {
     border: 1px solid rgb(161, 158, 158);
 }
 
-
 /* .beneficios1, .beneficios3, .beneficios5{
     background-color: #77C9E4;
 }
@@ -189,7 +188,6 @@ header {
 .beneficios2, .beneficios4, .beneficios6{
     background-color: #ABDAE1;
 } */
-
 
 
 @media(max-width: 1050px) {
@@ -217,13 +215,18 @@ header {
 
     /* SERVIÇOS */
 
-    .servico1,
+    .servicos{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+
+    /* .servico1,
     .servico2,
     .servico3,
     .servico4 {
         max-width: 300px;
         margin: 0px;
-    }
+    } */
 
     /* ATENDIMENTO */
 
@@ -243,14 +246,46 @@ header {
         color: rgb(43, 86, 180);
         margin-top: 50px;
     }
+}
 
+@media(max-width: 800px){
+    .beneficios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px){
+    .beneficios{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios4{
+        background-color: #EDF9FF;
+        border: 1px solid rgb(161, 158, 158);
+    }
+
+    .beneficios5{
+        background-color: #77C9E4;
+        border: none;
+    }
+
+    .beneficios6{
+        border: 1px solid rgb(161, 158, 158);
+        background-color: #EDF9FF;
+    }
 }
 
 @media(max-width: 616px) {
-    .servicos {
-        flex-wrap: wrap;
-        max-width: 300px;
-        margin: auto;
-    }
+    .servicos{
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+
+     .servicos >article{
+        padding-bottom: 80px;
+     }
 
 }
+

@@ -147,6 +147,51 @@ header {
 
 }
 
+/* BENEFÍCIOS */
+
+.beneficios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 980px;
+    margin: 100px auto auto auto;
+}
+
+.beneficios > article{
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 80px 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.beneficios1, .beneficios4{
+    background-color: #77C9E4;
+}
+
+.beneficios1, .beneficios4{
+    background-color: #77C9E4;
+}
+
+.beneficios3, .beneficios6{
+    background-color: #77C9E4;
+}
+
+.beneficios2, .beneficios5{
+    background-color: #EDF9FF;
+    border: 1px solid rgb(161, 158, 158);
+}
+
+
+/* .beneficios1, .beneficios3, .beneficios5{
+    background-color: #77C9E4;
+}
+
+.beneficios2, .beneficios4, .beneficios6{
+    background-color: #ABDAE1;
+} */
+
+
+
 @media(max-width: 1050px) {
     /* home care */
 

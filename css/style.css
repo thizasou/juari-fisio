@@ -34,17 +34,17 @@ header {
 }
 
 .menu li a {
-    color: #EDF9FF;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
 }
 
 .menu li a:hover {
-    color: #edf9ffc4;
+    color: rgba(255, 255, 255, 0.753);
 }
 
 .divisao {
-    color: #EDF9FF;
+    color: white;
     cursor: default;
 }
 
@@ -63,7 +63,7 @@ header {
     color: rgb(43, 86, 180);
 }
 
-.home-care>article>h3 {
+.home-care>article>h4 {
     color: rgb(43, 86, 180);
 }
 
@@ -247,19 +247,50 @@ header {
     display: block;
     border: none;
     outline: none;
-    width: 180px;
+    width: 140px;
     height: 48px;
     margin-top: 25px;
     border-radius: 8px;
     background-color: #77C9E4;
     font-size: 16px;
+    font-weight: 700;
     cursor: pointer;
  }
 
  .form_box button:hover{
     background-color: #33AED7;
  }
- 
+
+ /* CONTATO 2*/
+
+ .contato2{
+
+ }
+
+ .contato2 a{
+    text-decoration: none;
+    color: white;
+    /* font-weight:700; */
+    font-size: 1.5rem;
+ }
+
+ .botoes-contato{
+
+ }
+
+.atend-wpp{
+    background-color: #60D669;
+    align-items: center;
+    display: flex;
+    max-width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+} 
+
+.atend-wpp span{
+   margin-left: 20px;
+} 
+
 /* BOTÃO WHATSAPP */
 
  .fundo-botao-wpp{

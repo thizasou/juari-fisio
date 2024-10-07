@@ -347,19 +347,22 @@ nav li a{
 
  .atend-wpp{
     background-color: #60D669;
-    align-items: center;
-    display: flex;
+    max-width: fit-content;
+    border-radius: 8px;
+    margin: 45px auto;
+
+} 
+
+.telefone{
+    background-color: #30B6F0;
     max-width: fit-content;
     border-radius: 8px;
     margin: auto;
-} 
-
-.atend-wpp > a > span{
-   margin-left: 20px;
-} 
-
- .contato2 img{
 }
+
+.espaco{
+    margin-left: 20px;
+ } 
 
 /* BOTÃO WHATSAPP */
 

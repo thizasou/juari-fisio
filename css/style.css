@@ -264,32 +264,47 @@ header {
  /* CONTATO 2*/
 
  .contato2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+ }
 
+ .botoes-contato{
+ }
+
+ .botoes-contato h2{
+    max-width: 283px;
+    margin: auto;
+    color: rgb(43, 86, 180);
  }
 
  .contato2 a{
     text-decoration: none;
     color: white;
-    /* font-weight:700; */
+    font-weight:700;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
  }
 
- .botoes-contato{
-
- }
-
-.atend-wpp{
+ .atend-wpp{
     background-color: #60D669;
     align-items: center;
     display: flex;
     max-width: fit-content;
-    padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin: auto;
 } 
 
-.atend-wpp span{
+.atend-wpp > a > span{
    margin-left: 20px;
 } 
+
+ .contato2 img{
+}
 
 /* BOTÃO WHATSAPP */
 

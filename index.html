@@ -4,21 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saúde</title>
+    <title>Juari</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviço</a></li>
-                <li><a href="#">Como funciona</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li class="contato"><a href="#" >Contato</a></li>
-            </ul>
+        <nav class="nav-bar">
+            <!-- <div class="logo">
+                <h1>Logo</h1>
+            </div> -->
+            <div class="nav-list">
+                <ul class="menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Serviço</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Como funciona</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" >Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="contato-buttom">
+                <button><a href="#">Contato</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/abrir.png" alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul class="menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Serviço</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Como funciona</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" >Contato</a></li>
+            </ul>
+
+            <div class="contato-buttom">
+                <button><a href="#">Contato</a></button>
+            </div>
+
+        </div>
     </header>
 
     <main>
@@ -148,6 +174,8 @@
             <img src="./imagens/wpp-icon.png" alt="botão whatsapp">
         </div>
     </a>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

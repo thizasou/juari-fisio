@@ -40,13 +40,18 @@ header{
 .nav-link{
     font-size: 1.15rem;
     color: white;
+    padding: 15px;
 }
 
 .contato-buttom button{
     border: none;
     background-color: #0187a7;
-    padding: 10px 15px;
     border-radius: 5px;
+}
+
+.contato-buttom button a{
+    padding: 10px 15px;
+    display: block;
 }
 
 button > a{

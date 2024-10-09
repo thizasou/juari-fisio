@@ -424,6 +424,10 @@ footer span{
     .contato-img{
         text-align: center;
     }
+
+    .atendimento > div{
+        order: 1;
+    }
     
 }
 
@@ -547,14 +551,14 @@ footer span{
 
 @media(max-width: 530px){
     .btn-w > button > img{
-        margin-top: 8px;
+        margin-top: 10px;
         margin-left: 20px;
     }
 }
 
 @media(max-width: 441px){
     .btn-t > button > img{
-        margin-top: 8px;
+        margin-top: 5px;
         margin-left: 20px;
     }
 }

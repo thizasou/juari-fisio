@@ -13,3 +13,24 @@ function menuShow() {
         icon.src = "imagens/fechar.png";  // Ícone de "X"
     }
 }
+
+document.querySelectorAll('.nav-link, .contato-buttom a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetID = this.getAttribute('href').substring(1); // Remove o "#" do href
+        const targetSection = document.getElementById(targetID);
+
+        if (targetSection) {
+            // Obter a altura do menu
+            const menuHeight = document.querySelector('.nav-bar').offsetHeight;
+
+            // Calcular a posição de rolagem subtraindo a altura do menu
+            const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - menuHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});

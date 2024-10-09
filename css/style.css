@@ -19,6 +19,8 @@ img {
 
 header{
     background-color: #19647E;
+    position: sticky;
+    top: 0px;
 }
 
 .nav-bar{
@@ -288,6 +290,7 @@ header{
     display: flex;
     align-items: center;
     text-align: center;
+    margin-bottom: 70px;
 }
 
 .contato-02 > div{
@@ -299,7 +302,6 @@ header{
     background-color: #60D669;
     padding: 5px;
     border-radius: 5px;
-    margin-left: 10px;
 }
 
 .btn-w > button > a{
@@ -309,12 +311,15 @@ header{
     margin-left: 10px;
 }
 
+.btn-t{
+    margin-top: 50px;
+}
+
 .btn-t > button{
     border: none;
     background-color: #33AED7;
     padding: 5px;
     border-radius: 5px;
-    margin-top: 50px;
 }
 
 .btn-t > button > a{
@@ -327,66 +332,6 @@ header{
 .btn-t > button > img, .btn-w > button > img{
     float: left;
 }
-
-@media(max-width: 900px){
-    .contato-02 {
-        flex-direction: column;
-    }
-
-    .btn-t > button > img, .btn-w > button > img{
-        float: none;
-    }
-
-    .contato-02 > div{
-        flex: 1 1 400px;
-        margin: 0px 20px;
-    }
-}
-
- /* CONTATO 2*/
-
- /* .contato2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
- }
-
- .botoes-contato h2{
-    max-width: 283px;
-    margin: auto;
-    color: rgb(43, 86, 180);
- }
-
- .contato2 a{
-    text-decoration: none;
-    color: white;
-    font-weight:700;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
- }
-
- .atend-wpp{
-    background-color: #60D669;
-    max-width: fit-content;
-    border-radius: 8px;
-    margin: 45px auto;
-
-} 
-
-.telefone{
-    background-color: #30B6F0;
-    max-width: fit-content;
-    border-radius: 8px;
-    margin: auto;
-}
-
-.espaco{
-    margin-left: 20px;
- }  */
 
 /* FOOTER */
 
@@ -450,14 +395,6 @@ footer span{
        grid-template-columns: 1fr 1fr;
     }
 
-    /* .servico1,
-    .servico2,
-    .servico3,
-    .servico4 {
-        max-width: 300px;
-        margin: 0px;
-    } */
-
     /* ATENDIMENTO */
 
     .atendimento {
@@ -490,7 +427,7 @@ footer span{
     
 }
 
-@media(max-width: 805px){
+@media(max-width: 850px){
     .beneficios{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -596,12 +533,28 @@ footer span{
 
 /* CONTATO 2 */
 
-@media (max-width: 980px) {
-    .contato2{
-        grid-template-columns: 1fr;
-        /* margin: 30px 0px; */
-     }
+@media(max-width: 960px){
+
+    .contato-02 > div{
+        flex: 1 1 400px;
+        margin: 0px 20px;
+    }
+
     .contato2-img{
         display: none;
+    }
+}
+
+@media(max-width: 530px){
+    .btn-w > button > img{
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 441px){
+    .btn-t > button > img{
+        margin-top: 15px;
+        margin-left: 20px;
     }
 }

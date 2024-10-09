@@ -14,6 +14,36 @@ function menuShow() {
     }
 }
 
+document.querySelectorAll('.nav-link, .contato-button').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Obtém o ID da seção alvo do link (removendo o "#")
+        const targetID = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetID);
+
+        if (targetSection) {
+            // Calcula a posição da seção alvo, considerando a altura do menu
+            const menuHeight = document.querySelector('.nav-bar').offsetHeight;
+            const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - menuHeight;
+
+            // Rola suavemente até a seção alvo
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+
+            // Fecha o menu mobile se ele estiver aberto
+            const menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');  // Fecha o menu
+                document.querySelector('.icon').src = "imagens/abrir.png"; // Muda o ícone do menu
+            }
+        }
+    });
+});
+
+
 document.querySelectorAll('.nav-link, .contato-buttom a').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();

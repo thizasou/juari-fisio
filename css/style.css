@@ -282,9 +282,70 @@ header{
     background-color: #33AED7;
  }
 
+ /* CONTATO 02 */
+
+ .contato-02 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contato-02 > div{
+    flex: 1 1 400px;
+}
+
+.btn-w > button{
+    border: none;
+    background-color: #60D669;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.btn-w > button > a{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.btn-t > button{
+    border: none;
+    background-color: #33AED7;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.btn-t > button > a{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.btn-t > button > img, .btn-w > button > img{
+    float: left;
+}
+
+@media(max-width: 900px){
+    .contato-02 {
+        flex-direction: column;
+    }
+
+    .btn-t > button > img, .btn-w > button > img{
+        float: none;
+    }
+
+    .contato-02 > div{
+        flex: 1 1 400px;
+        margin: 0px 20px;
+    }
+}
+
  /* CONTATO 2*/
 
- .contato2{
+ /* .contato2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -325,7 +386,7 @@ header{
 
 .espaco{
     margin-left: 20px;
- } 
+ }  */
 
 /* FOOTER */
 
